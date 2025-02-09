@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+.primaryclr {
+    --text-color: #e6a749;
+    color: var(--text-color);
+}
+
+.primarybg {
+    --text-color: #e6a749;
+    background-color: var(--text-color);
+}
+
+.darkbg {
+    --dark-bg: #171817;
+    background-color: var(--dark-bg);
+}
+
+.primaryhover:hover {
+    color: var(--text-color);
+}
