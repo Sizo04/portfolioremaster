@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <>
-            <header className='w-dvw top-0 block md:hidden darkbg'>
+            <header className='w-dvw top-0 block md:hidden darkbg relative'>
                 <nav className='p-[1em]'>
                     <div className='flex justify-between'>
                         <img src={logo} alt="" />
@@ -19,7 +19,7 @@ const Navbar = () => {
                         </button>
                     </div>
                 </nav>
-                <div className={`menu flex align-center justify-center text-center ${isOpen ? "block" : "hidden"}`}>
+                <div className={`menu fixed top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-dvw jutify-center flex items-center justify-center text-center opacity-95 darkbg shadow-lg p-4 rounded-lg z-50 ${isOpen ? "block" : "hidden"}`}>
                     <ul className="space-y-8">
                         {navLinks.map((item, index) => (
                             <li key={index}>

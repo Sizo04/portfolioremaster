@@ -1,13 +1,19 @@
 @import "tailwindcss";
 
+:root {
+    --primary-color: #e6a749;
+}
+
 .primaryclr {
-    --text-color: #e6a749;
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .primarybg {
-    --text-color: #e6a749;
-    background-color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+.primaryfill {
+    fill: var(--primary-color);
 }
 
 .darkbg {
